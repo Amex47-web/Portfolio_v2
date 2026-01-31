@@ -1,0 +1,43 @@
+/* src/components/Featured.css */
+.featured-section {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.profile-links-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-links-list a {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid var(--glass-border);
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
+  background: var(--glass-bg);
+}
+
+.profile-links-list a:hover {
+  color: var(--text-primary);
+  border-color: var(--primary-color);
+  background: var(--surface-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .profile-links-list {
+    gap: 1rem;
+  }
+}

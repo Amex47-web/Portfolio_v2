@@ -1,0 +1,15 @@
+/* src/components/Footer.css */
+.site-footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  border-top: 1px solid var(--glass-border);
+  background: var(--surface-color);
+}
+
+.site-footer p {
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}

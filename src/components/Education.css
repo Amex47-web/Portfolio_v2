@@ -1,0 +1,91 @@
+/* src/components/Education.css */
+.education-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-top: 1px solid var(--glass-border);
+  /* Separator from experience */
+}
+
+/* Re-using the .section-title style */
+.education-section .section-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 50px;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.education-card {
+  background-color: var(--surface-color);
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--glass-border);
+  transition: var(--transition-fast);
+}
+
+.education-card:hover {
+  border-color: var(--text-primary);
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 5px;
+}
+
+.education-degree {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.education-date {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+  padding-top: 5px;
+  /* Align better with degree title */
+}
+
+.education-institution {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  /* Brand color */
+  margin: 0 0 15px 0;
+}
+
+.education-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 767px) {
+  .education-section .section-title {
+    font-size: 2.5rem;
+  }
+
+  .education-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+
+  .education-degree {
+    font-size: 1.3rem;
+  }
+}

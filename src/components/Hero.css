@@ -1,0 +1,191 @@
+/* src/components/Hero.css */
+/* src/components/Hero.css */
+.hero-section {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  /* Essential for containing the background blobs */
+  padding: 4rem 1rem;
+  background: radial-gradient(circle at center, var(--surface-color) 0%, var(--bg-color) 100%);
+}
+
+/* --- Dynamic Background Animation --- */
+.hero-section::before,
+.hero-section::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  /* Creates the soft glow effect */
+  opacity: 0.15;
+  z-index: 0;
+  animation: float 15s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+/* Blob 1: Light Mist */
+.hero-section::before {
+  top: 10%;
+  left: 10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #ffffff, transparent 70%);
+  animation-duration: 20s;
+}
+
+/* Blob 2: Darker/Grey Mist (using ::after) */
+.hero-section::after {
+  bottom: 15%;
+  right: 15%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #808080, transparent 70%);
+  animation-duration: 25s;
+  animation-direction: alternate-reverse;
+}
+
+[data-theme="light"] .hero-section::before {
+  background: radial-gradient(circle, #000000, transparent 70%);
+  opacity: 0.05;
+}
+
+[data-theme="light"] .hero-section::after {
+  background: radial-gradient(circle, #000000, transparent 70%);
+  opacity: 0.08;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(40px, 50px) scale(1.05);
+  }
+
+  100% {
+    transform: translate(-30px, -30px) scale(0.95);
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  /* Keep content above the background */
+  max-width: 800px;
+}
+
+.hero-background-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 2rem;
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+  background: var(--surface-color);
+}
+
+[data-theme="light"] .hero-background-image {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.hero-background-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.hero-background-image:hover img {
+  transform: scale(1.05);
+  /* retain slight zoom on hover */
+}
+
+
+.hero-title-small {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  /* Use secondary text instead of primary color */
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.hero-name {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.btn-get-in-touch {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0px;
+  /* Sharper edges for sophistication */
+  background: var(--text-primary);
+  color: var(--bg-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+}
+
+.btn-get-in-touch:hover {
+  transform: translateY(-2px);
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--text-primary);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="light"] .btn-get-in-touch {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Response Styles */
+@media (max-width: 768px) {
+  .hero-name {
+    font-size: 3.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+  }
+
+  /* Tone down animations on mobile for performance */
+  .hero-section::before,
+  .hero-section::after {
+    opacity: 0.2;
+    filter: blur(60px);
+  }
+}

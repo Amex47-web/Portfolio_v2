@@ -1,0 +1,158 @@
+/* src/index.css */
+
+/* Import Google Fonts: Inter for UI, Roboto Mono for code/accents */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Color Palette - Monochromatic Dark */
+  --bg-color: #050505;
+  /* Deepest Black */
+  --surface-color: #121212;
+  /* Dark Grey */
+  --surface-hover: #1e1e1e;
+  /* Slightly Lighter Grey */
+
+  --primary-color: #ffffff;
+  /* Pure White */
+  --secondary-color: #888888;
+  /* Mid Grey */
+
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1aa;
+
+  /* Gradients - Monochromatic */
+  --gradient-primary: linear-gradient(135deg, #ffffff 0%, #666666 100%);
+  --gradient-text: linear-gradient(90deg, #ffffff 0%, #aaaaaa 100%);
+
+  /* Spacing & Layout */
+  --max-width: 1200px;
+  --header-height: 80px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-smooth: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  /* Glassmorphism overrides */
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="light"] {
+  /* Color Palette - Monochromatic Light */
+  --bg-color: #ffffff;
+  /* Pure White */
+  --surface-color: #f4f4f5;
+  /* Very Light Grey */
+  --surface-hover: #e4e4e7;
+  /* Light Grey */
+
+  --primary-color: #000000;
+  /* Pure Black */
+  --secondary-color: #555555;
+  /* Dark Grey */
+
+  --text-primary: #09090b;
+  --text-secondary: #52525b;
+
+  --gradient-primary: linear-gradient(135deg, #000000 0%, #444444 100%);
+  --gradient-text: linear-gradient(90deg, #000000 0%, #444444 100%);
+
+  --glass-bg: rgba(0, 0, 0, 0.03);
+  --glass-border: rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-fast);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Utilities */
+.page-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.text-gradient {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.glass {
+  background: rgba(18, 18, 18, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Selection */
+::selection {
+  background: var(--primary-color);
+  color: #000;
+}

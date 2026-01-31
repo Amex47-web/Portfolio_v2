@@ -1,0 +1,84 @@
+/* src/components/Achievements.css */
+
+.achievements-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.achievements-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.achievements-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--text-secondary);
+  margin-bottom: 50px;
+}
+
+.achievements-grid {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allows tags to wrap */
+  justify-content: center;
+  /* Centers the tags */
+  gap: 15px;
+  /* Space between tags */
+}
+
+.achievement-tag {
+  background-color: var(--surface-color);
+  /* Dark background */
+  color: var(--text-primary);
+  /* White text */
+  padding: 10px 20px;
+  /* Space inside the tag */
+  border-radius: 8px;
+  /* Rounded rectangle */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid var(--glass-border);
+
+  /* --- 1. RE-ADD FLEX PROPERTIES --- */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.achievement-tag:hover {
+  background-color: var(--text-primary);
+  /* Brand color on hover */
+  color: var(--bg-color);
+  /* Dark text on hover */
+  transform: translateY(-3px);
+  /* Pop effect */
+  border-color: transparent;
+}
+
+/* --- 2. ADD STYLES FOR THE ICON --- */
+.achievement-icon {
+  display: flex;
+  align-items: center;
+}
+
+.achievement-icon svg {
+  width: 1.1em;
+  /* Set width relative to font size */
+  height: 1.1em;
+  /* Set height relative to font size */
+  fill: currentColor;
+  /* This makes the SVG use the tag's text color */
+}
+
+/* 3. Make the icon fill dark on hover */
+.achievement-tag:hover .achievement-icon svg {
+  fill: var(--bg-color);
+}

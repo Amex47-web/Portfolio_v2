@@ -1,0 +1,35 @@
+/* src/components/GetInTouchButton.css */
+
+.get-in-touch-container {
+  /* Center the button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  /* Space above the button */
+}
+
+.btn-get-in-touch {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--bg-color);
+  /* Using the brand color from your site */
+  background-color: var(--text-primary);
+  border: none;
+  border-radius: 5px;
+  padding: 12px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-get-in-touch:hover {
+  background-color: transparent;
+  /* A darker shade on hover */
+  color: var(--text-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--text-primary);
+}
