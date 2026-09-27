@@ -15,7 +15,7 @@ const allProjects = [
   {
     title: 'Smart Stock Management System',
     category: 'Web Development',
-    imageUrl: 'https://private-user-images.githubusercontent.com/206398521/525402596-c20e1cdf-107a-4274-b053-549bbc19bf84.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Njk4Nzg4NzIsIm5iZiI6MTc2OTg3ODU3MiwicGF0aCI6Ii8yMDYzOTg1MjEvNTI1NDAyNTk2LWMyMGUxY2RmLTEwN2EtNDI3NC1iMDUzLTU0OWJiYzE5YmY4NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMTMxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDEzMVQxNjU2MTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02ZmM0MjkxNTdmYjRjMDdjMzA1NWY2YTgwMTllODZiNmQ4NWY5M2M4MzNlY2FlZWFlYTQ1YmUxZjBkZTMwYWJlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.gzp36wrJA2FHBW-pCREy5xvziO2fgKWBZucEqVCyb2I',
+    imageUrl: '/dash.png',
     projectUrl: 'https://github.com/Amex47-web/inventory-system', // <-- IMPORTANT: Add your deployment link here
     linkText: 'View on Github'
   },
@@ -28,17 +28,10 @@ const allProjects = [
   },
 
   {
-    title: 'IR Prediction Using DL',
+    title: 'Sanskrit Image Text Segmentation',
     category: 'Machine Learning',
-    imageUrl: 'https://github.com/ycchen218/EDA-IRdrop-Prediction/raw/master/git_image/predict.png',
-    projectUrl: 'https://github.com/Amex47-web/EDA-IRdrop-Prediction', // <-- IMPORTANT: Add your GitHub/deployment link here
-    linkText: 'View on Github'
-  },
-  {
-    title: 'QVAKK - Online Quiz Platform',
-    category: 'Web Development',
-    imageUrl: 'https://media.licdn.com/dms/image/v2/D5622AQGWNUNV0F7VIA/feedshare-shrink_800/B56ZPeFJLuH0Ak-/0/1734597711649?e=1771459200&v=beta&t=KlXujeWI4lYhu94JHNPR3LJ6YrwSTLUt6k8XnCoMqnA',
-    projectUrl: 'https://github.com/Amex47-web/quizweb', // <-- IMPORTANT: Add your deployment link here
+    imageUrl: '/sans.png',
+    projectUrl: 'https://github.com/Amex47-web/Sanskrit_Image_Segmentation_CNN', // <-- IMPORTANT: Add your GitHub/deployment link here
     linkText: 'View on Github'
   },
   {
@@ -71,6 +64,13 @@ const allProjects = [
     imageUrl: 'https://miro.medium.com/v2/resize:fit:1400/format:webp/1*L465FOCvkuLioSscxHOikg.jpeg',
     projectUrl: 'https://ameyab014.medium.com/how-hedge-funds-work-inside-the-engines-of-modern-finance-bb0c865dc990', // <-- IMPORTANT: Add your article link here
     linkText: 'Read Article'
+  },
+  {
+    title: 'Notion Product-Led Growth: Case Study',
+    category: 'Case Study',
+    imageUrl: '/notion.png',
+    projectUrl: 'https://drive.google.com/drive/folders/1nIF0keWymSVNblyed0-pHhCeuw0Ehqis?usp=drive_link', // <-- IMPORTANT: Add your article link here
+    linkText: 'Read Case Study'
   },
 
 ];

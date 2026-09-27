@@ -4,9 +4,9 @@ import './Skills.css';
 
 // 1. All the skills from your image
 const skillsData = [
-  'Python', 'C/C++', 'JavaScript', 'TypeScript', 'SQL', 'React.js', 'Next.js 15', 'TailwindCSS',
-  'Node.js', 'Express.js', 'REST APIs', 'MongoDB', 'PostgreDB', 'MySQL', 'ML', 'DL', 'Vercel AI SDK',
-  'NLP', 'RAG', 'LangChain', 'DSA', 'System Design', 'Authentication', 'LLMs'
+  'Go-to-Market Strategy', 'Market Research', 'Content Marketing', 'Lead Generation', 'A/B Testing', 'Multi-channel Outreach', 'Python', 'C/C++', 'JavaScript', 'TypeScript', 'SQL', 'React.js', 'Next.js 15', 'TailwindCSS',
+  'Node.js', 'Express.js', 'REST APIs', 'ML', 'DL',
+  'NLP', 'RAG', 'LangChain', 'LLMs', 'AI Agent Workflows'
 ];
 
 const Skills = () => {

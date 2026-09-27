@@ -5,11 +5,10 @@ import './Expertise.css';
 // We'll define the expertise data here
 const expertiseData = [
   {
-    title: 'Software Development',
-    description: 'Experienced in both functional and OOP: C++, Python, JavaScript, and TypeScript, with a strong foundation in Data Structures and Algorithms (DSA).',
-    // We'll use simple text/emoji for icons for now
-    icon: '💻', 
-    highlightClass: 'highlight-magenta'
+    title: 'GTM Strategy & Growth',
+    description: 'Experienced in identifying ideal customer profiles, developing positioning and messaging, building acquisition strategies, and executing targeted outreach to drive product growth.',
+    icon: '🚀',
+    highlightClass: 'highlight-green'
   },
   {
     title: 'Full Stack Dev',

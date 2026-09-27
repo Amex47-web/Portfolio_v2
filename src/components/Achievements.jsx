@@ -43,7 +43,7 @@ const MediumIcon = () => (
 const achievementsData = [
   {
     icon: <LeetCodeIcon />,
-    text: 'LeetCode - 1602 Rating (Top 22%)',
+    text: 'LeetCode - 1800+ Rating ',
     url: 'https://leetcode.com/u/ameyabalange/' // Add your LeetCode URL
   },
   {

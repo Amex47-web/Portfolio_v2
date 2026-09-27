@@ -22,10 +22,10 @@ function App() {
       <Hero /> 
 
       <Featured/>
+      <Experience />
       <Expertise />
       <Skills /> {/* 2. Add the new component here */}
       <Work />
-      <Experience />
       <Achievements /> {/* 2. Add the new component here */}
       <Education /> 
       <Contact />

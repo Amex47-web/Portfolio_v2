@@ -39,12 +39,12 @@
 
 [data-theme="light"] {
   /* Color Palette - Monochromatic Light */
-  --bg-color: #ffffff;
-  /* Pure White */
-  --surface-color: #f4f4f5;
-  /* Very Light Grey */
-  --surface-hover: #e4e4e7;
-  /* Light Grey */
+  --bg-color: #f5f0e8;
+  /* Warm Cream */
+  --surface-color: #ece7de;
+  /* Warm Light Grey */
+  --surface-hover: #e0dbd1;
+  /* Warm Grey */
 
   --primary-color: #000000;
   /* Pure Black */

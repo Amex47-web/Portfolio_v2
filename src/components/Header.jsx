@@ -35,10 +35,10 @@ const Header = () => {
         <nav className="main-nav">
           <ul>
             <li><a onClick={() => scrollToSection('hero-section')}>// home</a></li>
+            <li><a onClick={() => scrollToSection('experience')}>// experience</a></li>
             <li><a onClick={() => scrollToSection('expertise')}>// expertise</a></li>
             <li><a onClick={() => scrollToSection('skills')}>// skills</a></li>
             <li><a onClick={() => scrollToSection('work')}>// work</a></li>
-            <li><a onClick={() => scrollToSection('experience')}>// experience</a></li>
             <li><a onClick={() => scrollToSection('contact')}>// contact</a></li>
             <li><ThemeToggle /></li>
           </ul>

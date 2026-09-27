@@ -27,9 +27,9 @@ const Hero = () => {
         </h1>
 
         <p className="hero-description">
-          Software Engineer, Full Stack & ML Developer.
+          GTM Strategist, Software Engineer & AI Developer.
           <br />
-          Building digital experiences with modern technologies.
+          Building AI products and digital experiences with modern technologies.
         </p>
 
         <div className="hero-button-container">
